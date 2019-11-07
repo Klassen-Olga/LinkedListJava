@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0deadfbc-14d0-4770-8dc6-f30be9933d8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LinkedList/de/LinkedList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LinkedList/de/Louncher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LinkedList/de/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/LinkedList/de/LinkedListTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Louncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/de/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/de/LinkedListTest.java" afterDir="false" />
+    <list default="true" id="0deadfbc-14d0-4770-8dc6-f30be9933d8b" name="Default Changelist" comment="generics used">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinkedList/de/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinkedList/de/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinkedList/de/Louncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinkedList/de/Louncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinkedList/de/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinkedList/de/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/LinkedList/de/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/LinkedList/de/LinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Louncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Louncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/Node.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest">
+  <component name="RunManager" selected="Application.Louncher">
     <configuration name="Louncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.Louncher" />
       <module name="LinkedList" />
@@ -136,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTest" />
         <item itemvalue="Application.Louncher" />
+        <item itemvalue="JUnit.LinkedListTest" />
         <item itemvalue="JUnit.LinkedListTest.should_return_6" />
         <item itemvalue="JUnit.LinkedListTest.should_return_1" />
         <item itemvalue="JUnit.LinkedListTest.should_return_0" />
@@ -155,6 +148,14 @@
       <option name="presentableId" value="Default" />
       <updated>1572971903211</updated>
     </task>
+    <task id="LOCAL-00001" summary="generics used">
+      <created>1573112482438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573112482438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,26 +163,42 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="generics used" />
+    <option name="LAST_COMMIT_MESSAGE" value="generics used" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/de/Louncher.java</url>
-          <line>20</line>
+          <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/de/Louncher.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/de/Louncher.java</url>
           <line>8</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="node2" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

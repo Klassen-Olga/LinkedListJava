@@ -1,79 +1,77 @@
 package de;
 
 public class LinkedList<T> {
-    Node first;
-    Node last;
-    LinkedList(){
-        first=null;
-        last=null;
+    private Node first;
+    private Node last;
+    private int size;
+
+    LinkedList() {
+        first = null;
+        last = null;
+        size=0;
     }
-    void pushFront(T data ){
-        Node<T> node=new Node<>(data);
 
-        if(first==last && first==null){
-            first=node;
-            last=node;
+    public void pushFront(T data) {
+        Node<T> node = new Node<>(data);
 
+        if (first == last && first == null) {
+            first = node;
+            last = node;
+
+        } else {
+            first.previous = node;
+            node.previous = null;
+            node.next = first;
+            first = node;
         }
-
-        else {
-            first.previous=node;
-            node.previous=null;
-            node.next=first;
-            first=node;
-        }
+        size++;
     }
-    void pushBack(T data){
-        Node<T> node=new Node<>(data);
-        if(first==last && first==null){
-            first=node;
-            last=node;
 
-        }
-        else{
-            node.next=null;
-            node.previous=last;
-            last.next=node;
-            last=node;
-        }
+    public void pushBack(T data) {
+        Node<T> node = new Node<>(data);
+        if (first == last && first == null) {
+            first = node;
+            last = node;
 
+        } else {
+            node.next = null;
+            node.previous = last;
+            last.next = node;
+            last = node;
+        }
+        size++;
     }
-    int size(){
-        if(first==null){return 0;}
-        if (first.next==null){return 1;}
 
-        int size=0;
-        Node nodeHelp1=first;
+    public int size() {
 
-        while(nodeHelp1!=null){
-            size++;
-            nodeHelp1=nodeHelp1.next;
-        }
         return size;
     }
-    void popFront(){
-        if (first==null){return;}
-        else if(first.next==null){//only 1 element in list
-            first=null;
-            last=null;
-        }
-        else {
 
-            first=first.next;
-            first.previous=null;
+    public void popFront() {
+        if (first == null) {
+            return;
+        } else if (first.next == null) {//only 1 element in list
+            first = null;
+            last = null;
+        } else {
+
+            first = first.next;
+            first.previous = null;
         }
+        size--;
     }
-    void popBack(){
-        if (first==null){return;}
-        else if(first.next==null){//only 1 element in list
-            first=null;
-            last=null;
-        }
-        else {
 
-            last=last.previous;
-            last.next=null;
-        }
+    public void popBack() {
+        if (first == null) {
+            return;
+        } else if (first.next == null) {//only 1 element in list
+            first = null;
+            last = null;
+        } else {
 
+            last = last.previous;
+            last.next = null;
+        }
+        size--;
     }
 }
