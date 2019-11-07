@@ -1,13 +1,14 @@
 package de;
 
-public class LinkedList {
+public class LinkedList<T> {
     Node first;
     Node last;
     LinkedList(){
         first=null;
         last=null;
     }
-    void pushFront(Node node){
+    void pushFront(T data ){
+        Node<T> node=new Node<>(data);
 
         if(first==last && first==null){
             first=node;
@@ -22,7 +23,8 @@ public class LinkedList {
             first=node;
         }
     }
-    void pushBack(Node node){
+    void pushBack(T data){
+        Node<T> node=new Node<>(data);
         if(first==last && first==null){
             first=node;
             last=node;

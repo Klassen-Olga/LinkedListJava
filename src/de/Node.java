@@ -1,15 +1,15 @@
 package de;
 
-public class Node {
-    private int number;
+public class Node <T>{
+    private T data;
     Node next;
     Node previous;
     Node(){
         next=null;
         previous=null;
     }
-    Node(int number){
-        this.number=number;
+    Node(T data){
+        this.data=data;
         next=null;
         previous=null;
     }
